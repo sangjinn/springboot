@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(SpringExtension.class)  // juit을 spirng 형태로 테스트
-@WebMvcTest  // web 관련 테스트시  @Springboottest 도 가능하지만 불필요한 것까지 다 끌어올린다.
+@WebMvcTest(controllers = HelloController.class)  // web 관련 테스트시  @Springboottest 도 가능하지만 불필요한 것까지 다 끌어올린다.
 public class HelloControllerTest {
 
     @Autowired    // bean들 정의

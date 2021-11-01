@@ -32,4 +32,12 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
+
+    //title과 content만 수정 가능하다
+    //author 수정가능하지않다.
+    public void update(String title, String content){
+        this.title=title;
+        this.content=content;
+
+    }
 }
